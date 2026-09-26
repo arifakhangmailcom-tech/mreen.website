@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Amreen 💗</title><style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffd6ec, #e8d5ff, #f8c8dc);
+  color: #6b246d;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Main Card */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.card {
+  width: 100%;
+  max-width: 600px;
+  padding: 40px 25px;
+  border-radius: 35px;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 35px rgba(139, 52, 139, 0.25);
+  animation: appear 1.5s ease;
+}
+
+h1 {
+  font-size: 42px;
+  color: #d63384;
+  animation: glow 2s infinite alternate;
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #8e44ad;
+}
+
+.message {
+  margin-top: 25px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #6b356b;
+}
+
+.cake {
+  font-size: 80px;
+  margin: 25px 0;
+  animation: bounce 1.5s infinite;
+}
+
+button {
+  margin-top: 25px;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff69b4, #9b59b6);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(155,89,182,0.35);
+}
+
+button:hover {
+  transform: scale(1.08);
+}
+
+.hidden {
+  display: none;
+}
+
+.secret {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #9b3d8f;
+  animation: appear 1s ease;
+}
+
+/* Floating Hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 25px;
+  animation: float 6s linear infinite;
+  pointer-events: none;
+}
+
+.heart:nth-child(1) { left: 10%; animation-delay: 1s; }
+.heart:nth-child(2) { left: 30%; animation-delay: 3s; }
+.heart:nth-child(3) { left: 55%; animation-delay: 0s; }
+.heart:nth-child(4) { left: 75%; animation-delay: 2s; }
+.heart:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #ff9dcc; }
+  to { text-shadow: 0 0 20px #d63384; }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+</style></head><body><div class="heart">💗</div>
+<div class="heart">💜</div>
+<div class="heart">💕</div>
+<div class="heart">💖</div>
+<div class="heart">💗</div><div class="container">
+  <div class="card"><div class="cake">🎂</div>
+
+<h1>Happy Birthdayyy!</h1>
+<h2>Amreen 💗✨</h2>
+
+<p class="message">
+  To my cute, funny and thodi si pagal friend Amreen! 😂💗
+  <br><br>
+  May your birthday be filled with endless smiles,
+  beautiful moments and lots of happiness. 🥹✨
+  <br><br>
+  Stay the same cute & crazy person you are! 🎀
+  Never stop smiling and keep spreading your happiness. 💜
+  <br><br>
+  Once again...
+  <br>
+  <b>HAPPIEST BIRTHDAY AMREEN! 🎂🥳💗</b>
+</p>
+
+<button onclick="showWish()">💌 Click for a Surprise</button>
+
+<p id="secret" class="secret hidden">
+  You are not just a friend... you're a whole vibe! 😂💗✨
+  <br>
+  Stay happy, stay crazy, and enjoy your special day! 🎀
+</p>
+
+  </div>
+</div><script>
+function showWish() {
+  document.getElementById("secret").classList.remove("hidden");
+}
+</script></body>
+</html>
